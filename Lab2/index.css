@@ -1,0 +1,80 @@
+
+body {
+  background: black;
+  color: lime;
+}
+
+header {
+  height: 200px;
+  background-image: url("gif/pattern.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+
+#main {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #111;
+  border: 2px solid magenta;
+  border-radius: 6px;
+  text-align: center;
+  color: lime;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: magenta;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lime;
+  color: black;
+}
+
+#resetBtn {
+  background: red;
+  color: white;
+}
+
+#resetBtn:hover {
+  background: orange;
+  color: black;
+}
+
+#feedback {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#guesses,
+#attemptsLeft,
+#wins,
+#losses {
+  font-weight: bold;
+  color: lime;
+}
