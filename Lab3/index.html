@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <h1>Movie Trivia!</h1>
+
+    <div>1. What Movie is about Werewolves and Vampires?</div>
+    <label>
+        <input type="radio" name="q1" value="AlienVsPredator"> AlienVsPredator
+    </label>
+    <label>
+        <input type="radio" name="q1" value="Twilight"> Twilight
+    </label>   
+    <label>
+    <input type="radio" name="q1" value="Dracula"> Dracula
+    </label>      
+    <div id="feedback1"></div>
+    <img id="feedbackImg1" class="feedback-img">
+
+    <br><br>
+
+    <div>2. Which of these movies features a female protagonist in a dystopian world where society is split into districts?</div>
+    <label>
+        <input type="checkbox" id="q2a" value="The Maze Runner"> The Maze Runner
+    </label>
+    <label>
+        <input type="checkbox" id="q2b" value="Divergent"> Divergent
+    </label>   
+    <label>
+     <input type="checkbox" id="q2c" value="Hunger Games"> Hunger Games
+    </label> 
+    <div id="feedback2"></div>
+    <img id="feedbackImg2" class="feedback-img">
+    <br><br>
+
+    <div>3. What movie is the character Jason Voorhees from?</div>
+    <div id="q3Options"></div>
+    <div id="feedback3"></div>
+    <img id="feedbackImg3" class="feedback-img">
+
+    <br><br>
+
+    <div>4. How many Shrek movies are there (as of now)?</div>
+    <input type="number" id="q4">
+    <div id="feedback4"></div>
+    <img id="feedbackImg4" class="feedback-img">
+    <br><br>
+
+    <div>5. In the movie Home Alone, what is the main character's name?</div>
+    <input type="text" id="q5">
+    <div id="feedback5"></div>
+    <img id="feedbackImg5" class="feedback-img">
+
+    <br><br>
+    <button id="quizBtn">Submit Quiz</button>
+
+    <br><br>
+    <div id="scoreDisplay"></div>
+    <div id="attemptsDisplay"></div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
