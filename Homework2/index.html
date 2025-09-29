@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>My Shopping Cart</h1>
+  <div class="container">
+    <div class="cart">
+      <table id="cartTable">
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Laptop</td>
+          <td>$700</td>
+          <td><input type="number" value="1" min="0" class="qty"></td>
+          <td class="subtotal"></td>
+        </tr>
+        <tr>
+          <td>Headphones</td>
+          <td>$67</td>
+          <td><input type="number" value="2" min="0" class="qty"></td>
+          <td class="subtotal"></td>
+        </tr>
+        <tr>
+          <td>Lego Set</td>
+          <td>$32</td>
+          <td><input type="number" value="1" min="0" class="qty"></td>
+          <td class="subtotal"></td>
+        </tr>
+        <tr>
+          <td>Charger</td>
+          <td>$10</td>
+          <td><input type="number" value="1" min="0" class="qty"></td>
+          <td class="subtotal"></td>
+        </tr>
+      </table>
+      <div id="promoSection">
+        <p class="promoNote">Available codes: <strong>FREE</strong>, <strong>SAVE</strong></p>
+        <label for="promo">Promo Code: </label>
+
+        <input type="text" id="promo" placeholder="Enter code">
+      </div>
+      <div id="shippingSection">
+        <label for="shipping">Shipping Method:</label>
+        <select id="shipping">
+          <option value="0">Select...</option>
+          <option value="20">Truck ($20)</option>
+          <option value="35">Plane ($35)</option>
+          <option value="15">CargoShip ($15)</option>
+        </select>
+        <div id="shipImage"></div>
+      </div>
+
+      <button id="updateBtn">Update Cart</button>
+    </div>
+
+    <div class="summary">
+      <p>Total: $<span id="cartSubtotal">0</span></p>
+      <p>Shipping: $<span id="cartShipping">0</span></p>
+      <p>Tax (10%): $<span id="cartTax">0</span></p>
+      <p class="totalLine">Grand Total: $<span id="cartTotal">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

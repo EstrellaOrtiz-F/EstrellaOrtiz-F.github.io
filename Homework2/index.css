@@ -1,0 +1,109 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F0F6FF;
+  color: #1C1C1C;
+}
+h1 {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  color: #1C1C1C;
+  font-size: 34px;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.cart, .summary {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+.cart {
+  flex: 2;
+  min-width: 420px;
+}
+
+.summary {
+  flex: 1;
+  min-width: 280px;
+  height: fit-content;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #E0E6F0;
+}
+
+th {
+  background: #E6F0FF;
+  color: #1C1C1C;
+  font-weight: 600;
+}
+input[type="number"], input[type="text"], select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #B0C4E0;
+  border-radius: 6px;
+  width: 70px;
+  text-align: center;
+}
+
+#promoSection, #shippingSection {
+  margin-top: 25px;
+}
+
+#promoSection label, #shippingSection label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+#shipImage img {
+  margin-top: 12px;
+  width: 90px;
+  height: auto;
+}
+.summary p {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.totalLine {
+  font-weight: 700;
+  font-size: 22px;
+  color: #04070b;
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 25px;
+  background: linear-gradient(90deg, #12253a, #233a51);
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+button:hover {
+  background: linear-gradient(90deg, #357ABD, #4A90E2);
+  transform: translateY(-2px);
+}
