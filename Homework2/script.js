@@ -60,7 +60,7 @@ function showShippingImage()
     img.src = "img/truck.jpeg"; 
     shipDiv.appendChild(img);
   } else if (choice === "35") {
-    img.src ="img/_.jpeg";
+    img.src ="img/plane.jpeg";
     shipDiv.appendChild(img);
   } else if (choice === "15") {
     img.src = "img/cargoship.jpeg";
